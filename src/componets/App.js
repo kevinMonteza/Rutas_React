@@ -9,6 +9,7 @@ import Content from './global/Content';
 import Footer from './global/Footer';
 
 import items  from './data/menu';
+
 class App extends Component {
 	 static propTypes={
       children:PropTypes.object.isRequired
@@ -18,10 +19,9 @@ class App extends Component {
     return (
 
       <div className="App">
-        <Header title="Página nueva con React" items={items} />
-        <Content body={children}/>
-        <Footer />
-
+         <Header title="Página nueva con React" items={items} />
+         <Content body={children}/>
+         <Footer />
       </div>
     );
   }
